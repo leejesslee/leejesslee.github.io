@@ -14,8 +14,10 @@
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-		h1 a:link { text-decoration:none; }
+         h1 { font-size: 42px; font-weight: bold; letter-spacing: -2px;  float: left;  margin-right: 10px; }
+		hr {border: none; background-color: #999; height: 1px; margin-top: -8px; margin-bottom: 12px;}
+		#nav li{display: inline; font-size: 20px; font-weight: bold; margin-left: 15px;  position: relative; top:6px;}
+		#nav a { color: #000000; text-decoration: none; border-bottom: none; }
         h2 { font-size: 20px; margin: 12px 0 10px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
         p { margin: 12px 0 -5px 0; }
@@ -44,10 +46,13 @@
     
         <div id="contact-info" class="vcard">
         
-            <!-- Microformats! -->
         
-            <h1 class="fn"><a href="index.html" style="h1">Jessica Lee</a></h1>
-        
+            <h1 class="fn">Jessica Lee</h1>
+			<ul id="nav">
+			<li><a href="index.html">CV</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			</ul>   
+			<hr>
             <p>
                 E-mail: <a class="email" href="mailto:jessicaleesthlm@outlook.com">jessicaleesthlm@outlook.com</a>
             </p>
@@ -64,7 +69,7 @@
         <dl>
             <dd class="clear"></dd>
             
-            <dt>PORTFOLIO</dt>
+            <dt>Portfolio</dt>
 			<dd>
 			<h2>Examensarbete på kandidatnivå</h2>
 			<p class="smallheadline"> Språk: C#<br></p>
@@ -73,6 +78,7 @@
 			<div class ="filelist">
 			<p><u class="smallheadline">Ladda ner:</u><br>
 			<a class="file" href="Portfolio/Examensarbete/Examensrapport.pdf" target="_blank">Rapport</a> <br>
+			<a class="file" href="Portfolio/Examensarbete/Screenshot.png" target="_blank">Screenshot</a><br>
 			<a class="file" href="Portfolio/Examensarbete/Examensarbeterun.zip">Körbar fil</a><br>
 			<a class="file" href="Portfolio/Examensarbete/SourceCode.zip">Källkod</a></p><br>
 			</div>
@@ -83,6 +89,7 @@
 			<p>Ett mobilspel i tidigt Alpha-stadie som fungerar på Android såväl som PC. Spelet använder sig av touch-funktioner och låter användaren styra spelet med pekfingret. Alphan är ett grupparbete av speldesigners samt andra programmerare. För detta projekt arbetade jag med kamerastyrningen.</p>
 			<div class ="filelist">
 			<p><u class="smallheadline">Ladda ner:</u><br>
+			<a class="file" href="Portfolio/Touch/Screenshot.png" target="_blank">Screenshot</a><br>
 			<a class="file" href="Portfolio/Touch/Touch.zip">Körbar fil</a><br>
 			<a class="file" href="Portfolio/Touch/SourceCode.zip">Källkod</a></p><br>
 			</div>
@@ -93,6 +100,7 @@
 			<p>Sidescrollspelet "Flykten" i 2D skapat av en grupp på 12 personer, däribland grafiker, ljuddesigners, storywriters och programmerare. Min roll för detta projekt var huvudsakligen leadprogrammer där jag skötte kommunikationen mellan programmerare och projektledare samt såg till att vi programmerare höll tidsplanen. Jag skrev även en hel del kod till spelet, bland annat inom GUI-interaktion, tillstånd och 2D-animationer.</p>
 			<div class ="filelist">
 			<p><u class="smallheadline">Ladda ner:</u><br>
+			<a class="file" href="Portfolio/Flykten/Screenshot.png" target="_blank">Screenshot</a><br>
 			<a class="file" href="https://www.dropbox.com/s/5wmokkbqmko0wmk/Flykten.zip?dl=1">Körbar fil</a><br>
 			<a class="file" href="Portfolio/Flykten/SourceCode.zip">Källkod</a></p><br>
 			</div>
@@ -103,6 +111,7 @@
 			<p>Demo för ett 3D-spel i tredjepersonsperspektiv vid namn "Räv". Demot skapades av en grupp på 16 personer inom loppet av 10 veckor. Min roll för detta projekt var att skriva kod tillsammans med fyra andra programmerare. Jag jobbade främst med tillstånd och fysik, men också lite med GUI-funktioner.</p>
 			<div class ="filelist">
 			<p><u class="smallheadline">Ladda ner:</u><br>
+			<a class="file" href="Portfolio/Rav/Screenshot.png" target="_blank">Screenshot</a><br>
 			<a class="file" href="Portfolio/Rav/SourceCode.zip">Källkod</a><br>
 			<a class="file" href="https://youtu.be/sgjemFwDCZE" target="_blank">Se trailer</a></p><br>
 			</div>
@@ -113,6 +122,7 @@
 			<p>En hemsida för spelet "Räv". Sidans layout och design är skrivet i CSS medan sidans innehåll är skrivet i HTML. Galleriet och felmeddelandet i kontaktformuläret är kodade i JavaScript. Detta är inte en officiell hemsida för spelet, utan ett fritidsprojekt av mig. 
 			<div class ="filelist">
 			<p><u class="smallheadline">Ladda ner:</u><br>
+			<a class="file" href="Portfolio/Website/Screenshot.png" target="_blank">Screenshot</a><br>
 			<a class="file" href="Portfolio/Website/SourceCode.zip">Källkod</a><br>
 			<a class="file" href="https://www.googledrive.com/host/0BwErTJgKqqd_WTNTU1pKNU1tdms" target="_blank">Se hemsida</a></p><br>
 			</div>
@@ -123,6 +133,7 @@
 			<p>Ett program vars uppgift är att blanda fram en önskad färg för att ta reda på dess RGB-värde. Programmet ritar ut 6 slumpvalda färger åt gången. Användaren får då klicka på den färg som är närmast den önskade färgen. Programmet räknar då ut 6 nya färger baserat på den valda färgen. Steget upprepas tills man nått den önskade färgen. Algoritmen använder sig av evolutionära tekniker genom att låta de valda färgerna ha högst fitnessvärde och sedan slumpa fram färger baserat på RGB-värdens fitnessvärde. För att inte fastna i samma färger sker ibland en mutation som slumpar fram en helt ny färg som är orelevant till fitnesvärdena.</p>
 			<div class ="filelist">
 			<p><u class="smallheadline">Ladda ner:</u><br>
+			<a class="file" href="Portfolio/Evolution/Screenshot.png" target="_blank">Screenshot</a><br>
 			<a class="file" href="Portfolio/Evolution/Evolution.zip">Körbar fil</a><br>
 			<a class="file" href="Portfolio/Evolution/SourceCode.zip">Källkod</a><br>
 			</p>
